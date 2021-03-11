@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#717171"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#444444"
+        android:backgroundTint="#444444"
+        android:foregroundTint="#444444"
+        android:gravity="right|center_horizontal|center_vertical"
+        android:paddingRight="25dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:strokeColor="#0C0606"
+        app:strokeWidth="1sp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnParenIzq"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="("
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnParnDer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text=")"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="mc"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMmas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="m+"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMmenos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="m-"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="mr"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpAC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="AC"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnMasMenos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="+/-"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpPorcentaje"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="%"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FC9F05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="/"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnParenDosnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="2^nd"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpX2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^2"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpX3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^3"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpXy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^y"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpEx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="e^x"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOp10x"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="10^x"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="7"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="8"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="9"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpPor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FC9F05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="X"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOpUnoX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="1/x"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpRaiz2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^(1/2)"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpRaiz3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^(1/3)"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpRaizY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x^(1/y)"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpLn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="ln"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpLog10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Log10"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+        <Button
+            android:id="@+id/BtnDig4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="4"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/BtnDig5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="5"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="6"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMenos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FC9F05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="-"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+        >
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnOpXfact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="x!"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpSin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="sin"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpCos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="cos"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOptan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="AC"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="e"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpEE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="ee"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="1"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="2"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="3"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpMas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FC9F05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="+"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOpRad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Rad"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpSinh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="SinH"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpCosH"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="cosh"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOptanh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="tanh"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnPi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Pi"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpRand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#565656"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Rand"
+            android:textSize="10sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnDig0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="+"
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+        <Button
+            android:id="@+id/btnOpPunto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:backgroundTint="#727272"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="."
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+        <Button
+            android:id="@+id/btnOpIgual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FC9F05"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="="
+            android:textSize="16sp"
+            app:strokeColor="#292929"
+            app:strokeWidth="0.5dp"
+            tools:ignore="Suspicious0dp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
